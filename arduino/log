@@ -1,0 +1,16 @@
+Mar 14
+Theswing does not work out in previous experiments. Possible reasons:
+- The buggy constraint controller (switch to the pid position control)
+- Power (solved but untested)
+- Moment of inertia of the legs (maybe later)
+- control frequency (300 Hz current). This should not be a issue.
+
+
+The swing motion frequency is about 1.25Hz. The Arduino controller should be totally fine.
+
+3) Shall we use longer rod? Maybe not,
+
+Schedule:
+1) speed controller is maybe not the issue. Go with it first and reduce control frequency. Controll frequency can be issue. To reduce the controll frequency to 20Hz.
+2) If this does not work out, try position controller
+3) If this does not work out, try to fix the speed controller 
